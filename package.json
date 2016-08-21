@@ -1,0 +1,21 @@
+{
+  "name": "faker-database-client",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./**/__test__/*.spec.js"
+  },
+  "keywords": [],
+  "author": "Gabin Aureche <hello@gabinaureche.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "3.0.2",
+    "proxyquire": "1.7.10",
+    "sinon": "1.17.5"
+  },
+  "dependencies": {
+    "faker": "3.1.0",
+    "lodash": "4.15.0"
+  }
+}
