@@ -1,12 +1,17 @@
 {
   "name": "faker-database-client",
   "version": "0.0.0",
-  "description": "",
+  "description": "Fake database client generating structured data.",
   "main": "index.js",
   "scripts": {
     "test": "mocha ./**/__test__/*.spec.js"
   },
-  "keywords": [],
+  "keywords": [
+    "fake",
+    "data",
+    "database",
+    "coding exercise"
+  ],
   "author": "Gabin Aureche <hello@gabinaureche.com>",
   "license": "MIT",
   "devDependencies": {
