@@ -12,6 +12,12 @@ Since it's just a set of functions that return structured data, it can be used w
 Want to focus on the frontend? Get a backend from the community.
 Want to work on some backend? Create an api serving a fake frontend and eventually grab one here.
 
+## Words of caution
+
+While this library sometimes refers to Facebook, Twitter and other products, it is in no way affiliated with them.
+Neither it is attempting to recreate their real data structure.
+Instead, it provides simpler versions that contains what you'd need to rebuild part of their interface.
+
 ## Submissions
 
 *WIP*
