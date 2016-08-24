@@ -11,7 +11,7 @@ module.exports = function Post () {
     author: User(),
     content: faker.lorem.paragraphs(),
     attachment: Attachment(),
-    likes: Collection(10, Like),
-    comments: Collection(10, Comment)
+    likes: Collection(Like),
+    comments: Collection(Comment)
   });
 };

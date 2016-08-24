@@ -8,6 +8,6 @@ module.exports = function Comment () {
   return Model({
     content: faker.lorem.sentences(),
     author: User(),
-    likes: Collection(10, Like)
+    likes: Collection(Like)
   });
 };
