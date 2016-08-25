@@ -6,12 +6,14 @@ var Like = require('./Like');
 var Comment = require('./Comment');
 var Collection = require('../lib/Collection');
 
-module.exports = function Post () {
-  return Model({
-    author: User(),
-    content: faker.lorem.paragraphs(),
-    attachment: Attachment(),
-    likes: Collection(Like),
-    comments: Collection(Comment)
-  });
-};
+module.exports = Model({
+  factory: function Post () {
+    return {
+      author: User(),
+      content: faker.lorem.paragraphs(),
+      attachment: Attachment(),
+      likes: Collection(Like),
+      comments: Collection(Comment)
+    };
+  }
+});
