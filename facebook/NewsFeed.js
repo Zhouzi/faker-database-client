@@ -1,6 +1,5 @@
-var Collection = require('../lib/Collection');
 var Post = require('./Post');
+var User = require('./User');
+var createPopulate = require('../lib/createPopulate');
 
-module.exports = function NewsFeed () {
-  return Collection(20, Post);
-};
+module.exports = createPopulate(Post, User);
