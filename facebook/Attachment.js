@@ -8,4 +8,7 @@ module.exports = Model(function Attachment () {
     url: faker.internet.url(),
     image: faker.image.image()
   };
+}, {
+  description: 0.8,
+  image: 0.6
 });

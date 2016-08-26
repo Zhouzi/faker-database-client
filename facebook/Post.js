@@ -14,4 +14,6 @@ module.exports = Model(function Post () {
     likes: Collection(Like),
     comments: Collection(Comment)
   };
+}, {
+  attachment: 0.6
 });
