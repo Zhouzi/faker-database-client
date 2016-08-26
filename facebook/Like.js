@@ -1,8 +1,10 @@
 var Model = require('../lib/Model');
 var User = require('./User');
 
-module.exports = Model(function Like () {
+function Like () {
   return {
     author: User()
   };
-});
+}
+
+module.exports = Model(Like);

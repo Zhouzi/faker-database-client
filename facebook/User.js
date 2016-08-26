@@ -1,7 +1,7 @@
 var faker = require('faker');
 var Model = require('../lib/Model');
 
-module.exports = Model(function User () {
+function User () {
   return {
     cover: faker.image.image(),
     avatar: faker.image.avatar(),
@@ -9,4 +9,6 @@ module.exports = Model(function User () {
     lastName: faker.name.lastName(),
     email: faker.internet.email()
   };
-});
+}
+
+module.exports = Model(User);

@@ -6,7 +6,7 @@ var Like = require('./Like');
 var Comment = require('./Comment');
 var Collection = require('../lib/Collection');
 
-module.exports = Model(function Post () {
+function Post () {
   return {
     author: User(),
     content: faker.lorem.paragraphs(),
@@ -14,6 +14,10 @@ module.exports = Model(function Post () {
     likes: Collection(Like),
     comments: Collection(Comment)
   };
-}, {
+}
+
+Post.meta = {
   attachment: 0.6
-});
+};
+
+module.exports = Model(Post);
