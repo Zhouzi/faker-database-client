@@ -1,7 +1,7 @@
 {
-  "name": "faker-database-client",
+  "name": "structured-data-generator",
   "version": "0.0.0",
-  "description": "Fake database client generating structured data.",
+  "description": "Library that generates fake structured data.",
   "main": "index.js",
   "scripts": {
     "test": "mocha ./**/__test__/*.spec.js"
